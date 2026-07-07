@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AQUATRACK</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+  <h1>AQUATRACK</h1>
+  <h3>Monitoreo de parametros de acuarios</h3>
+
+  <div class="menu">
+    <a href="#acuario1">Acuario Sala (agua dulce)</a>
+    <a href="#acuario2">Acuario Reef (agua salada)</a>
+    <a href="#acuario3">Acuario Peceras chicas (agua dulce)</a>
+  </div>
+
+  <p id="mensajeInicio" class="nota">Toca uno de los botones de arriba para ver sus parametros.</p>
+
+  <!-- ===================== ACUARIO 1 ===================== -->
+  <div class="seccionAcuario" id="acuario1">
+    <div class="caja">
+      <h3>Acuario Sala - <span class="dulce">Agua dulce</span></h3>
+
+      <h3>Nueva medicion</h3>
+      Fecha: <input type="text" placeholder="dd/mm/aaaa"><br><br>
+      pH: <input type="text" placeholder="Ej: 7.0">
+      GH: <input type="text" placeholder="Ej: 8">
+      KH: <input type="text" placeholder="Ej: 5"><br>
+      Temperatura: <input type="text" placeholder="Ej: 25">
+      Amoniaco: <input type="text" placeholder="Ej: 0">
+      Nitrito: <input type="text" placeholder="Ej: 0">
+      Nitrato: <input type="text" placeholder="Ej: 20">
+
+      <center><input type="submit" value="Guardar medicion"></center>
+
+      <h3>Historial</h3>
+      <table>
+        <tr>
+          <th>Fecha</th><th>pH</th><th>GH</th><th>KH</th><th>Temp</th><th>Amoniaco</th><th>Nitrito</th><th>Nitrato</th>
+        </tr>
+        <tr>
+          <td>01/07/2026</td><td>7.0</td><td>8</td><td>5</td><td>25</td><td>0</td><td>0</td><td>20</td>
+        </tr>
+        <tr>
+          <td>15/06/2026</td><td>6.8</td><td>7</td><td>4</td><td>24</td><td>0</td><td>0</td><td>25</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===================== ACUARIO 2 ===================== -->
+  <div class="seccionAcuario" id="acuario2">
+    <div class="caja">
+      <h3>Acuario Reef - <span class="salada">Agua salada</span></h3>
+
+      <h3>Nueva medicion</h3>
+      Fecha: <input type="text" placeholder="dd/mm/aaaa"><br><br>
+      pH: <input type="text" placeholder="Ej: 8.2">
+      KH: <input type="text" placeholder="Ej: 9">
+      Salinidad: <input type="text" placeholder="Ej: 34"><br>
+      Temperatura: <input type="text" placeholder="Ej: 25">
+      Calcio: <input type="text" placeholder="Ej: 420">
+      Magnesio: <input type="text" placeholder="Ej: 1300">
+      Nitrato: <input type="text" placeholder="Ej: 5">
+
+      <center><input type="submit" value="Guardar medicion"></center>
+
+      <h3>Historial</h3>
+      <table>
+        <tr>
+          <th>Fecha</th><th>pH</th><th>KH</th><th>Salinidad</th><th>Temp</th><th>Calcio</th><th>Magnesio</th><th>Nitrato</th>
+        </tr>
+        <tr>
+          <td>02/07/2026</td><td>8.2</td><td>9</td><td>34</td><td>25</td><td>420</td><td>1300</td><td>5</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===================== ACUARIO 3 ===================== -->
+  <div class="seccionAcuario" id="acuario3">
+    <div class="caja">
+      <h3>Acuario Peceras chicas - <span class="dulce">Agua dulce</span></h3>
+
+      <h3>Nueva medicion</h3>
+      Fecha: <input type="text" placeholder="dd/mm/aaaa"><br><br>
+      pH: <input type="text" placeholder="Ej: 7.2">
+      GH: <input type="text" placeholder="Ej: 10">
+      KH: <input type="text" placeholder="Ej: 6"><br>
+      Temperatura: <input type="text" placeholder="Ej: 26">
+      Amoniaco: <input type="text" placeholder="Ej: 0">
+      Nitrito: <input type="text" placeholder="Ej: 0">
+      Nitrato: <input type="text" placeholder="Ej: 15">
+
+      <center><input type="submit" value="Guardar medicion"></center>
+
+      <h3>Historial</h3>
+      <table>
+        <tr>
+          <th>Fecha</th><th>pH</th><th>GH</th><th>KH</th><th>Temp</th><th>Amoniaco</th><th>Nitrito</th><th>Nitrato</th>
+        </tr>
+        <tr>
+          <td>03/07/2026</td><td>7.2</td><td>10</td><td>6</td><td>26</td><td>0</td><td>0</td><td>15</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
