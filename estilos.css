@@ -1,7 +1,8 @@
 body {
   background-color: #e6f7ff;
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
+  padding: 20px;
 }
 
 h1 {
@@ -26,10 +27,32 @@ h3 {
   margin-right: auto;
 }
 
-/* MENU PARA CAMBIAR DE ACUARIO */
+/* contenedor que junta el checkbox, el boton y el menu */
+.menu-wrapper {
+  max-width: 750px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+/* el checkbox que controla si el menu esta abierto o cerrado */
+.menu-toggle {
+  display: none;
+}
+
+/* el boton hamburguesa, oculto en pantallas grandes */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #006699;
+  cursor: pointer;
+  padding: 4px 10px;
+  border: 1px solid #006699;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 .menu {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .menu a {
@@ -70,6 +93,7 @@ th {
 input {
   padding: 4px;
   width: 90%;
+  margin: 4px 0;
 }
 
 .dulce {
@@ -90,8 +114,46 @@ input {
   display: block;
 }
 
-.nota {
-  font-size: 13px;
-  color: #666666;
-  text-align: center;
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .barra-menu {
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .menu a {
+    display: block;
+    margin: 4px auto;
+    width: 80%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  table, th, td {
+    font-size: 12px;
+  }
 }
